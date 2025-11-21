@@ -1,16 +1,16 @@
 import tweepy
 import pandas as pd
 
-#consumer_key = "************" #Your API/Consumer key 
-#consumer_secret = "*********" #Your API/Consumer Secret Key
-#access_token = "***********"    #Your Access token key
-#access_token_secret = "*************" #Your Access token Secret key
+consumer_key = "RqfVzjkNTDuBCrkxCcsoF16U4"  
+consumer_secret = "tp08mVLGCBY0CMBK8L4U4F2fOeArW8CoI8y7MhNDtk2p6smnLf" 
+access_token = "2197303238-ngmHxF8ygi0TYM8nJMXAlyH4cL2aTr6GdXpADCO"    
+access_token_secret = "zOK7tI27IAdwWRH9JkebrkkaCOV1gqiSlfG8vqXfraIqK" 
 
 auth = tweepy.OAuth1UserHandler(
     consumer_key, consumer_secret,
     access_token, access_token_secret
 )
-Instantiate the tweepy API
+
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
 
