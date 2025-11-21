@@ -1,7 +1,11 @@
 import pandas as pd
-source_path = "../nyc-parking-tickets/Parking_Violations_Issued_-_Fiscal_Year_2015.csv"
 
+csv_source = " Path of the kaggle dataset"
 
+csv_destination = "Path of the processed csv file"
 
-for i,chunk in enumerate(pd.read_csv(source_path, chunksize=40000, dtype=dtypes)):
-    chunk.to_csv('../tmp/split_csv_pandas/chunk{}.csv'.format(i), index=False)
+df = pd.read_csv(csv_source)
+
+sorted_df = df.sort_values(by = "Date", ascending= False)
+
+chunked_df = sorted_df.sample(n= 300)
