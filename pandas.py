@@ -1,6 +1,16 @@
 import pandas as pd
 df = pd.read_csv("analyse.csv")
-positive_df = df[df["sentiment"].str.lower() == "positive"]
-negative_df = df[df["sentiment"].str.lower() == "negative"]
-most_positive = positive_df["product name"].value_counts().head(10)
-most_negative = negative_df["product name"].value_counts().head(10)
+final_df = df.read_csv("final_result.csv")
+for row in df.iterrows:
+  ratio= sentiment.count("positive")/sentiment.count("negative")
+  if(ratio>1):
+    final_df["action"]="buy"
+  else if(ratio==1):
+    continue
+  else:
+    final_df["action"]="sell"
+  final_df["stock"]=row["Stock Name"]
+  final_df["priority"]=ratio
+most_positive=final_df["priority"].max()
+most_negative=final_df["priority"].min()
+
