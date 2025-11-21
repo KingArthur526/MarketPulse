@@ -14,3 +14,5 @@ for row in df.iterrows:
 most_positive=final_df["priority"].max()
 most_negative=final_df["priority"].min()
 
+sorted_df = final_df.sort(by = "ratio", ascending = False)
+print(sorted_df)
