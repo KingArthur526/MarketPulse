@@ -1,0 +1,16 @@
+stock,pos,neg,ratio,action
+AMD,2,0,inf,buy
+KO,1,0,inf,buy
+DIS,1,0,inf,buy
+NFLX,1,0,inf,buy
+MSFT,4,1,4.0,buy
+NIO,3,2,1.5,buy
+META,3,2,1.5,buy
+AAPL,6,6,1.0,hold
+TSM,5,6,0.8333333333333334,sell
+PG,3,4,0.75,sell
+AMZN,2,3,0.6666666666666666,sell
+TSLA,20,37,0.5405405405405406,sell
+BA,0,1,0.0,sell
+GOOG,0,1,0.0,sell
+PYPL,0,2,0.0,sell
